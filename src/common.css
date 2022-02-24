@@ -1,0 +1,198 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*  공용 스타일  */
+
+.page-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper-1 {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+/* 특징 스타일 통일 */
+.point-title {
+  margin-bottom: 68.5px;
+}
+.point-title h3 {
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #070707;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.point-grid {
+  counter-reset: number;
+}
+
+.point-grid li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1250px) {
+  .point-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .point-grid li::before {
+    content: counter(number, decimal-leading-zero);
+    font-family: "NanumSquareBold";
+    font-weight: 500;
+    width: 55px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    align-items: center;
+    color: white;
+    counter-increment: number;
+    background-color: #3472d1;
+  }
+
+  .point-grid li {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.point-item {
+  display: flex;
+  border-top: 1px solid #9b9b9b;
+}
+
+.point-item .p-item-cover {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  margin: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.point-content {
+  padding-top: 60px;
+}
+.point-content h2 {
+  margin-bottom: 38px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "NanumSquareBold";
+  color: #0d0d0d;
+}
+
+.point-content p {
+  line-height: 2;
+  font-size: 16px;
+}
+
+/*  페이지 내의 배너 및 타이틀 */
+
+.page-banner {
+  height: 280px;
+  margin-top: 85px;
+  position: relative;
+}
+
+.page-title {
+  position: absolute;
+  top: 39%;
+  left: 18%;
+}
+
+.page-title h2 {
+  font-size: 42px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
