@@ -1,11 +1,12 @@
 import React from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
+import HeaderSection from "../../components/layout/header";
+import FooterSection from "../../components/layout/footer";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import HeaderSection from "../../components/layout/header";
-import FooterSection from "../../components/layout/footer";
 
 export default function Home() {
   const linkStyle = {
@@ -13,12 +14,40 @@ export default function Home() {
     color: "#000000",
   };
 
+  //settings 부분, 슬라이더의 기능을 조정할 수 있다.
   const settings = {
-    dots: true,
-    infinite: true,
+    dots: false, // 점은 안 보이게
+    infinite: true, // 무한으로 즐기게
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 1, //4장씩 보이게 해주세요
+    slidesToScroll: 1, //1장씩 넘어가세요
+    autoplay: true,
+    autoplaySpeed: 5000, // 넘어가는 속도
+    pauseOnHover: true,
+    centerMode: true,
+    centerPadding: "0px", // 0px 하면 슬라이드 끝쪽 이미지가 안잘림
+
+    responsive: [
+      // 반응형 웹 구현 옵션
+      {
+        breakpoint: 1200, // 화면 사이즈 1200px
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -31,10 +60,10 @@ export default function Home() {
             <img src="img/Home_banner_01.jpg" alt="" />
           </div>
           <div>
-            <h3>2</h3>
+            <img src="img/Home_banner_02.jpg" alt="" />
           </div>
           <div>
-            <h3>3</h3>
+            <img src="img/Home_banner_02.png" alt="" />
           </div>
         </Slider>
         {/* 브로넥스 온키퍼 배너 */}
@@ -112,6 +141,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
+        {/* 핵심전략 */}
         <section className="main-point">
           <div className="point-title wrapper-1">
             <h3>브로넥스 솔루션 핵심전략</h3>

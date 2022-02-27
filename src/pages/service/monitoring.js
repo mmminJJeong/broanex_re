@@ -3,7 +3,47 @@ import "./service.css";
 import HeaderSection from "../../components/layout/header";
 import FooterSection from "../../components/layout/footer";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 export default function Monitoring() {
+  const settings = {
+    dots: true, // 점은 안 보이게
+    infinite: true, // 무한으로 즐기게
+    speed: 500,
+    slidesToShow: 1, //n장씩 보이게 해주세요
+    centerPadding: "0px", // 0px 하면 슬라이드 끝쪽 이미지가 안잘림
+    centerMode: true,
+    className: "center",
+
+    responsive: [
+      // 반응형 웹 구현 옵션
+      {
+        breakpoint: 1200, // 화면 사이즈 1200px
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  const useCaseBack = {
+    backgroundImage: "url(img/use-section-title.jpg)",
+  };
+
   return (
     <>
       <div className="page-section">
@@ -37,9 +77,90 @@ export default function Monitoring() {
             alt="배너"
           />
         </section>
-        <section className="service-point"></section>
-        <section className="service-manage-section"></section>
-        <section className="service-difference-section"></section>
+        <section className="service-point">
+          <div className="wrapper-1">
+            <div className="service-point-tit">
+              <h2>Monitoring 활용 예시</h2>
+            </div>
+            <div className="service-point-cont">
+              <div className="point-content2">
+                <div className="point-content-item">
+                  <div></div>
+                </div>
+                <div className="point-content-text">
+                  <h3>STEP. 1</h3>
+                  <p>
+                    생산공정 및 설비 관련 데이터 수집, 저장, 알림,
+                    분석&모니터링을 통한 정보 통합 및 분석 / 관리
+                  </p>
+                </div>
+              </div>
+              <div className="point-content2">
+                <div className="point-content-item">
+                  <div></div>
+                </div>
+                <div className="point-content-text">
+                  <h3>STEP. 2</h3>
+                  <p>
+                    대시보드를 통한 신뢰성 있는 정보 공유를 하여 개선 목표 도출
+                    및 내부 공감
+                  </p>
+                </div>
+              </div>
+              <div className="point-content2">
+                <div className="point-content-item">
+                  <div></div>
+                </div>
+                <div className="point-content-text">
+                  <h3>STEP. 3</h3>
+                  <p>
+                    개선목표에 대응하는 시스템 확장 또는 고도화를 통해 원활한
+                    시스템 활용 및 맞춤형 스마트공장으로 진화
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="service-banner-section">
+          <Slider {...settings} className="home-banner-sec">
+            <div>
+              <img src="img/Home_banner_01.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/Home_banner_02.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/Home_banner_02.png" alt="" />
+            </div>
+          </Slider>
+        </section>
+        <section className="service-usecase-section">
+          <div className="use-section-subject wrapper-1">
+            <h2>Monitoring 구축 사례</h2>
+          </div>
+          <div className="use-section-title wrapper-1" style={useCaseBack}>
+            <div className="use-section-inside">
+              <h2>OO기기 A사</h2>
+              <ul className="use-section-summary">
+                <li>
+                  <i className="use-icon"></i>
+                  <strong>도입 제품</strong>
+                  <div>Monitoring + MES</div>
+                </li>
+                <li>
+                  <i className="use-icon"></i>
+                  <strong>구축 이유</strong>
+                  <div className="use-description is_en">
+                    점점 높아지는 의료용 기기에 대한 품질 관리(UDI)에 대비하고,
+                    정확한 재고 관리를 통한 생산효율을 극대화할 수 있는
+                    스마트팩토리 시스템 구축
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <FooterSection />
       </div>
     </>

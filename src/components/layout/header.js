@@ -12,7 +12,7 @@ export default function HeaderSection() {
     <>
       <header>
         <div className="header-center">
-          <Link to="/home">
+          <Link to="/">
             <h1 className="logo">
               <img src="img/main-logo.png" alt="logo" />
             </h1>

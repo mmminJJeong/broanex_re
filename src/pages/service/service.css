@@ -129,6 +129,7 @@
 
 .service-manage-section {
   padding: 150px 0;
+  text-align: center;
 }
 
 .service-manage-title {
@@ -158,4 +159,181 @@
   font-family: "Noto Sans KR", sans-serif;
   color: #0d0d0d;
   font-weight: bold;
+}
+
+/* 모니터링 포인트 (원) */
+.service-point-tit {
+  margin-bottom: 80px;
+}
+
+.service-point-tit h2 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: left;
+  color: #000;
+}
+.service-point-cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.point-content2 {
+  width: 298px;
+  text-align: center;
+}
+
+.point-content-item {
+  padding: 0 16px 0 17px;
+}
+.point-content-item > div {
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  width: 265px;
+  height: 265px;
+}
+
+.point-content-text {
+  padding-top: 30px;
+}
+
+.point-content-text > h3 {
+  color: #3e54d3;
+  font-size: 21px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 31px;
+}
+
+.point-content-text > p {
+  text-align: center;
+  color: #4b4b4b;
+  font-size: 19px;
+  font-family: "NanumSquare";
+  line-height: 1.43;
+}
+
+.service-usecase-section {
+  padding: 150px 0;
+}
+
+.use-section-subject > h2 {
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.use-section-subject {
+  height: 52px;
+  margin-bottom: 82px;
+}
+
+.use-section-title {
+  position: relative;
+  margin-bottom: 82px;
+  height: 360px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.use-section-inside {
+  position: relative;
+  z-index: 10;
+  color: white;
+  padding: 60px;
+}
+
+.use-section-inside h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: -2px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.use-section-summary {
+  line-height: 1.76;
+  font-size: 16px;
+}
+
+.use-section-summary li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.use-section-summary li strong {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.use-section-summary li strong:after {
+  content: " ";
+  width: 30px;
+  height: 1px;
+  opacity: 0.4;
+  margin: 0 18px 1px 20px;
+  background-color: #fff;
+}
+
+.use-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 19px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
+}
+
+.use-description {
+  overflow: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 1160px) {
+  .use-section-subject {
+    font-size: 2.8rem;
+    margin-bottom: 77px;
+    margin-top: -3px;
+  }
+  .use-section-title {
+    height: auto;
+  }
+
+  .use-section-inside {
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+  }
+
+  .use-section-inside h2 {
+    width: 360px;
+    margin: 0;
+  }
+
+  .use-section-summary {
+    padding: 32px 59px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .use-section-summary li {
+    margin-bottom: 36px;
+  }
+
+  .use-description {
+    max-width: 480px;
+  }
 }

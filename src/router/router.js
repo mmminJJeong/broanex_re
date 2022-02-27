@@ -12,7 +12,7 @@ import Notice from "../pages/newsroom/notice";
 
 export default function Router() {
   return useRoutes([
-    { path: "/home", element: <Home /> },
+    { path: "/", element: <Home /> },
     { path: "/onkeeper", element: <OnKeeper /> },
     { path: "/mes", element: <Mes /> },
     { path: "/monitoring", element: <Monitoring /> },
