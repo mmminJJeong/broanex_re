@@ -160,6 +160,63 @@ export default function Monitoring() {
               </ul>
             </div>
           </div>
+          <h2 className="booth-square">구축 내용</h2>
+          <div className="usecase-list wrapper-1">
+            <div className="usecase-list-contents">
+              <ul className="lists type_b">
+                <li>자재 입고에서 출하까지 MES를 통한 LOT 추적 관리</li>
+                <li>설비 I/F를 통한 생산 데이터 수집 자동화</li>
+                <li>
+                  원재료, 반제품, 완제품에 대한 정확한 재고 파악 및 모니터링
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="usecase-detail wrapper-1">
+            <div className="holder booth-detail">
+              <div className="image">
+                <img src="img/usecaes-01.png" alt=""></img>
+              </div>
+            </div>
+          </div>
+          <div className="usecase-graph wrapper-1">
+            <h2 className="booth-square">구축효과</h2>
+            <ul className="l_row l_row_hairline">
+              <li className="l_col l_col_6_12 l_col_large_3_12 l_col_mobile_12_12">
+                <div className="booth-state">
+                  <div className="booth-state-cover is_up">25%</div>
+                  <p className="booth-state-contents">
+                    생산과정의 체계적인 시스템화에 따른 생산량 25% 증가
+                  </p>
+                </div>
+              </li>
+              <li className="l_col l_col_6_12 l_col_large_3_12 l_col_mobile_12_12">
+                <div className="booth-state">
+                  <div className="booth-state-cover is_down">24%</div>
+                  <p className="booth-state-contents">
+                    측정 데이터의 실시간 관리를 통한 완제품 불량률 24% 개선
+                  </p>
+                </div>
+              </li>
+              <li className="l_col l_col_6_12 l_col_large_3_12 l_col_mobile_12_12">
+                <div className="booth-state">
+                  <div className="booth-state-cover is_up">4%</div>
+                  <p className="booth-state-contents">
+                    생산량에 따른 정확한 자재 소요량 파악으로 재고 비용 4% 절감
+                  </p>
+                </div>
+              </li>
+              <li className="l_col l_col_6_12 l_col_large_3_12 l_col_mobile_12_12">
+                <div className="booth-state">
+                  <div className="booth-state-cover is_up">10%</div>
+                  <p className="booth-state-contents">
+                    공정 진척 현황 관리에 따른 정확한 납기 예측으로 리드타임 10%
+                    감소
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <FooterSection />
       </div>

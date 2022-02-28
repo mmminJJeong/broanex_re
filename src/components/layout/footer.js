@@ -1,7 +1,7 @@
 export default function FooterSection() {
   return (
     <>
-      <footer>
+      <footer className="footer">
         <div className="footer-item wrapper-1">
           <div className="logobox">
             <img src="img/broanex-logo.png" alt="로고" />

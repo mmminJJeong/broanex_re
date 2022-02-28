@@ -78,6 +78,14 @@ th {
   padding: 0;
 }
 
+button {
+  outline: none;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
 /*  공용 스타일  */
 
 .page-section {
@@ -90,6 +98,10 @@ th {
   margin: 0 auto;
 }
 
+.wrapper-2 {
+  width: 1400px;
+  margin: 0 auto;
+}
 /* 특징 스타일 통일 */
 .point-title {
   margin-bottom: 68.5px;
@@ -195,4 +207,8 @@ th {
   font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   font-weight: bold;
+}
+
+.image {
+  position: relative;
 }
