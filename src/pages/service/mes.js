@@ -9,7 +9,7 @@ export default function Mes() {
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/page-banner.jpg" alt="페이지의 배너" />
+          <img src="img/banner/banner-mes.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>MES</h2>
           </div>
@@ -44,7 +44,11 @@ export default function Mes() {
           <ul className="point-grid wrapper-1">
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/preferences.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>모든 이산형 제조 유형 지원</h2>
                   <>
@@ -56,7 +60,11 @@ export default function Mes() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/cogwheel.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>서비스 라이프 사이클 관리</h2>
                   <p>
@@ -69,7 +77,11 @@ export default function Mes() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/preferences.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>품질 관리</h2>
                   <p>
@@ -82,7 +94,11 @@ export default function Mes() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/maintenance.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>프로젝트 라이프 사이클 관리</h2>
                   <p>
@@ -103,7 +119,7 @@ export default function Mes() {
             <h2>모든 생산과정을 체계적으로 관리 할 수 있는 MES</h2>
           </div>
           <div className="service-manage-item wrapper-1">
-            <img src="img/service-management.jpg" alt="표" />
+            <img src="img/service-management.png" alt="표" />
           </div>
         </section>
         <section className="service-difference-section">

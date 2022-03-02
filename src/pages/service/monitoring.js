@@ -49,7 +49,7 @@ export default function Monitoring() {
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/page-banner.jpg" alt="페이지의 배너" />
+          <img src="img/banner/banner-mes.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>Monitoring</h2>
           </div>
@@ -175,7 +175,7 @@ export default function Monitoring() {
           <div className="usecase-detail wrapper-1">
             <div className="holder booth-detail">
               <div className="image">
-                <img src="img/usecaes-01.png" alt=""></img>
+                <img src="img/usecaes-01.jpg" alt=""></img>
               </div>
             </div>
           </div>

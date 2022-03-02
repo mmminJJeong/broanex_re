@@ -118,11 +118,18 @@
   box-shadow: 0 3px 6px 0 #3e54d3;
 }
 
-.content-area:hover div {
+.content-area:hover .gird-contents-text {
   border: #3e54d3 1px solid;
 }
+.grid-contents-cover {
+  position: absolute;
+  top: 32%;
+  left: 34%;
+  width: 73px;
+  height: 73px;
+}
 
-.content-area div {
+.gird-contents-text {
   position: absolute;
   bottom: 0;
   left: -1px;
@@ -172,12 +179,13 @@
 
 .news-item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .news-area {
   width: 386px;
   text-align: center;
+  margin-right: 10px;
 }
 .news-area:hover .new-item-cover {
   background-color: #568cf7;

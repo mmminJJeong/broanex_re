@@ -13,7 +13,7 @@ export default function Spc() {
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/page-banner.jpg" alt="페이지의 배너" />
+          <img src="img/banner/banner-mes.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>SPC</h2>
           </div>
@@ -108,7 +108,11 @@ export default function Spc() {
           <ul className="point-grid wrapper-1">
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/sun.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>최적 에너지 도출</h2>
                   <p>
@@ -120,7 +124,11 @@ export default function Spc() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/laptop (3).png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>과다 사용원인 유추</h2>
                   <p>
@@ -132,7 +140,11 @@ export default function Spc() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/automation.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>고효율 설비위주 가동</h2>
                   <p>
@@ -144,7 +156,11 @@ export default function Spc() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/watching-tv.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>에너지 비용 모니터링</h2>
                   <p>
@@ -200,7 +216,7 @@ export default function Spc() {
           <div className="usecase-detail wrapper-1">
             <div className="holder booth-detail">
               <div className="image">
-                <img src="img/graph-ems.png" alt=""></img>
+                <img src="img/graph-ems.jpg" alt=""></img>
               </div>
             </div>
           </div>

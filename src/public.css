@@ -161,15 +161,14 @@ button {
 .point-item {
   display: flex;
   border-top: 1px solid #9b9b9b;
+  vertical-align: middle;
 }
 
 .point-item .p-item-cover {
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   flex-shrink: 0;
   margin: 40px;
-  background-color: #ddd;
-  border-radius: 50%;
 }
 
 .point-content {
@@ -198,7 +197,7 @@ button {
 
 .page-title {
   position: absolute;
-  top: 39%;
+  top: 32%;
   left: 18%;
 }
 
@@ -211,4 +210,38 @@ button {
 
 .image {
   position: relative;
+}
+
+.page-section-container {
+  padding: 150px 0;
+}
+
+.btn-style-01 {
+  width: 170px;
+  height: 59px;
+  border-radius: 16px;
+  border: solid 1px #707070;
+  background-color: #4f80e2;
+  font-family: NanumSquare;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-control1 {
+  width: 80%;
+  border-radius: 2px;
+  border: 1px solid rgb(209, 209, 209);
+  height: 61px;
+  line-height: 30px;
+  background-color: #fff;
+  margin: 0 10px;
+  padding: 1px 10px;
+  display: inline-block;
+  outline: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
 }

@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </Slider>
         {/* 브로넥스 온키퍼 배너 */}
-        <Link to="/" style={linkStyle}>
+        <Link to="/onkeeper" style={linkStyle}>
           {" "}
           <section className="show-intro">
             <div className="wrapper-1">
@@ -109,34 +109,44 @@ export default function Home() {
             <p>우리 공장에 적합한 스마트팩토리 솔루션을 지금 확인 하세요.</p>
           </div>
           <div className="smartfactory-grid wrapper-1">
-            <Link to="/" style={linkStyle}>
+            <Link to="/onkeeper" style={linkStyle}>
               <div className="content-area">
-                <img src="" alt="icon1" />
-                <div>온키퍼</div>
+                <div className="grid-contents-cover">
+                  <img src="img/icon/info.png" alt="icon1" />
+                </div>
+                <div className="gird-contents-text">온키퍼</div>
               </div>
             </Link>
-            <Link to="/" style={linkStyle}>
+            <Link to="/mes" style={linkStyle}>
               <div className="content-area">
-                <img src="" alt="icon2" />
-                <div>MES</div>
+                <div className="grid-contents-cover">
+                  <img src="img/icon/laptop-05.png" alt="icon1" />
+                </div>
+                <div className="gird-contents-text">MES</div>
               </div>
             </Link>
-            <Link to="/" style={linkStyle}>
+            <Link to="/monitoring" style={linkStyle}>
               <div className="content-area">
-                <img src="" alt="icon3" />
-                <div>Monitoring</div>
+                <div className="grid-contents-cover">
+                  <img src="img/icon/laptop (4).png" alt="icon1" />
+                </div>
+                <div className="gird-contents-text">Monitoring</div>
               </div>
             </Link>
-            <Link to="/" style={linkStyle}>
+            <Link to="/HACCP" style={linkStyle}>
               <div className="content-area">
-                <img src="" alt="icon4" />
-                <div>HACCP</div>
+                <div className="grid-contents-cover">
+                  <img src="img/icon/coffee.png" alt="icon1" />
+                </div>
+                <div className="gird-contents-text">HACCP</div>
               </div>
             </Link>
-            <Link to="/" style={linkStyle}>
+            <Link to="/EMS" style={linkStyle}>
               <div className="content-area">
-                <img src="" alt="icon5" />
-                <div>EMS</div>
+                <div className="grid-contents-cover">
+                  <img src="img/icon/battery.png" alt="icon1" />
+                </div>
+                <div className="gird-contents-text">EMS</div>
               </div>
             </Link>
           </div>
@@ -151,7 +161,11 @@ export default function Home() {
           <ul className="point-grid wrapper-1">
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/laptop-01.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>양방향 통신 표준화</h2>
                   <p>
@@ -163,7 +177,11 @@ export default function Home() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/automation.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>설비/물류 자동화</h2>
                   <p>
@@ -176,7 +194,11 @@ export default function Home() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/laptop-02.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>Real-time Tracking</h2>
                   <p>
@@ -189,7 +211,11 @@ export default function Home() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/gear.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>시스템에 의한 지능화</h2>
                   <p>
@@ -205,7 +231,11 @@ export default function Home() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/renewable-energy.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>제조 환경/안전</h2>
                   <p>
@@ -228,7 +258,7 @@ export default function Home() {
             <button className="view-btn news-btn">VIEW MORE</button>
           </div>
           <div className="news-item wrapper-1">
-            <Link to="/" style={linkStyle}>
+            <Link to="" style={linkStyle}>
               <div className="news-area">
                 <div className="new-item-cover">
                   <img src="" alt="" />
@@ -236,7 +266,7 @@ export default function Home() {
                 <div>2022-03-01의 브로넥스를 만나보세요</div>
               </div>
             </Link>
-            <Link to="/" style={linkStyle}>
+            <Link to="" style={linkStyle}>
               <div className="news-area">
                 <div className="new-item-cover">
                   <img src="" alt="" />
@@ -244,7 +274,7 @@ export default function Home() {
                 <div>2022-03-01의 브로넥스를 만나보세요</div>
               </div>
             </Link>
-            <Link to="/" style={linkStyle}>
+            <Link to="" style={linkStyle}>
               <div className="news-area">
                 <div className="new-item-cover">
                   <img src="" alt="" />

@@ -9,7 +9,7 @@ export default function Haccp() {
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/page-banner.jpg" alt="페이지의 배너" />
+          <img src="img/banner/banner-mes.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>HACCP</h2>
           </div>
@@ -53,7 +53,11 @@ export default function Haccp() {
           <ul className="point-grid wrapper-1">
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/server-02.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>설비 데이터 수집</h2>
                   <p>
@@ -65,7 +69,11 @@ export default function Haccp() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/watching-tv.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>실시간 모니터링 및 알람 제공</h2>
                   <p>
@@ -77,7 +85,11 @@ export default function Haccp() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/settings (1).png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>HACCP 통합 관리</h2>
                   <p>
@@ -89,7 +101,11 @@ export default function Haccp() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/updating.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>필수 요건 만족</h2>
                   <p>

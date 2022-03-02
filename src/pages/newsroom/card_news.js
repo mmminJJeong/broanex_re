@@ -16,7 +16,7 @@ export default function CardNews() {
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/page-banner.jpg" alt="페이지의 배너" />
+          <img src="img/banner/banner-card.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>카드뉴스</h2>
           </div>
@@ -25,8 +25,8 @@ export default function CardNews() {
         <section className="news-board">
           <div className="wrapper-1">
             <ul className="news-list">
-              <li className="news-item">
-                <Link to="/" style={linkStyle}>
+              <li className="news-item-02">
+                <Link to="" style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
                     <h2>안녕하세요 예제입니다</h2>
@@ -35,8 +35,8 @@ export default function CardNews() {
                   </div>
                 </Link>
               </li>
-              <li className="news-item">
-                <Link to="/" style={linkStyle}>
+              <li className="news-item-02">
+                <Link to="" style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
                     <h2>안녕하세요 예제입니다</h2>
@@ -45,8 +45,8 @@ export default function CardNews() {
                   </div>
                 </Link>
               </li>
-              <li className="news-item">
-                <Link to="/" style={linkStyle}>
+              <li className="news-item-02">
+                <Link to="" style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
                     <h2>안녕하세요 예제입니다</h2>
@@ -55,8 +55,8 @@ export default function CardNews() {
                   </div>
                 </Link>
               </li>
-              <li className="news-item">
-                <Link to="/" style={linkStyle}>
+              <li className="news-item-02">
+                <Link to="" style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
                     <h2>안녕하세요 예제입니다</h2>
@@ -65,8 +65,8 @@ export default function CardNews() {
                   </div>
                 </Link>
               </li>
-              <li className="news-item">
-                <Link to="/" style={linkStyle}>
+              <li className="news-item-02">
+                <Link to="" style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
                     <h2>안녕하세요 예제입니다</h2>
@@ -75,8 +75,8 @@ export default function CardNews() {
                   </div>
                 </Link>
               </li>
-              <li className="news-item">
-                <Link to="/" style={linkStyle}>
+              <li className="news-item-02">
+                <Link to="" style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
                     <h2>안녕하세요 예제입니다</h2>

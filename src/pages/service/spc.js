@@ -49,7 +49,7 @@ export default function Spc() {
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/page-banner.jpg" alt="페이지의 배너" />
+          <img src="img/banner/banner-mes.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>SPC</h2>
           </div>
@@ -100,7 +100,11 @@ export default function Spc() {
           <ul className="point-grid wrapper-1">
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/computer-01.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>데이터 전산화</h2>
                   <p>
@@ -112,7 +116,11 @@ export default function Spc() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/chart.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>페이퍼 워크 감소</h2>
                   <p>
@@ -124,7 +132,11 @@ export default function Spc() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/person.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>생산 효율성 달성</h2>
                   <p>
@@ -136,7 +148,11 @@ export default function Spc() {
             </li>
             <li>
               <div className="point-item">
-                <img className="p-item-cover" src="" alt="icon1" />
+                <img
+                  className="p-item-cover"
+                  src="img/icon/inauguration.png"
+                  alt="icon1"
+                />
                 <div className="point-content">
                   <h2>스마트 팩토리 첫걸음</h2>
                   <p>
@@ -187,7 +203,7 @@ export default function Spc() {
           <div className="usecase-detail wrapper-1">
             <div className="holder booth-detail">
               <div className="image">
-                <img src="img/usecase-02.png" alt=""></img>
+                <img src="img/usecase-02.jpg" alt=""></img>
               </div>
             </div>
           </div>

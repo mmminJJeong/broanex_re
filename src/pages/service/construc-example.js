@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./example.css";
 
 import HeaderSection from "../../components/layout/header";
@@ -7,17 +7,12 @@ import FooterSection from "../../components/layout/footer";
 import ModalPop from "../../components/modapop";
 
 export default function ConstrucExample() {
-  const linkStyle = {
-    textDecoration: "none",
-    color: "#000000",
-  };
-
   return (
     <>
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/page-banner.jpg" alt="페이지의 배너" />
+          <img src="img/banner/banner-bulid.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>구축사례</h2>
           </div>

@@ -1,0 +1,26 @@
+.consulting-section {
+  position: relative;
+}
+
+.consulting-contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.consulting-contents > label {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #000;
+}
+.btn-cover {
+  position: absolute;
+  right: 0;
+}
+
+.suject {
+  height: 220px;
+}

@@ -1,0 +1,302 @@
+/* 비전 */
+
+.vision-point,
+.mission-section {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.values-section {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 0;
+}
+.vision-point h2 {
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 42px;
+}
+
+.vision-point {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "NanumSquare";
+}
+
+.mission-section {
+  background-color: #e5f1fc;
+}
+
+.mission-section h2 {
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 42px;
+}
+
+.mission-section p {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "NanumSquare";
+}
+
+.mission-contents {
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.mission-contents li {
+  font-size: 22px;
+  font-family: "NanumSquare";
+}
+
+.mission-contents li span {
+  font-weight: 800;
+}
+.mission-contents li::before {
+  content: " ";
+  display: inline-block;
+  background-image: url(../../../public/img/check.png);
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.values-section h2 {
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 42px;
+}
+
+.core-index {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.core-content {
+  width: 250px;
+  height: 250px;
+  padding: 98px 32px;
+  background-color: #3472d1;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  font-family: "NanumSquare";
+  box-shadow: 5px 5px 10px #bebebe;
+}
+
+.core-content span {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 9px;
+}
+
+/* 브랜드 ci 스타일 */
+
+.logo-intro {
+  padding: 150px 0;
+  text-align: center;
+  font-size: 22px;
+  font-family: "NanumSquare";
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.logo-section1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-contents h2,
+.logo-section2 h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: left;
+  color: #000;
+  margin-bottom: 47px;
+}
+
+.logo-section2 {
+  padding-top: 150px;
+}
+
+.logo-contents2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* 회사소개 */
+
+.page-about-title {
+  font-family: "NanumSquare";
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.36;
+  text-align: center;
+  color: #000;
+}
+
+.page-history-title h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.page-history-title > div {
+  width: 1250px;
+  height: 75px;
+  margin: 61px 0 53.6px;
+  border: solid 1px #707070;
+  background-color: #3e54d3;
+  text-align: center;
+}
+
+.page-history-title > div > p {
+  font-family: "NanumSquare";
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 75px;
+  color: #fff;
+}
+
+.history-year {
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.history-year h2 {
+  font-size: 32px;
+  color: black;
+  width: 33.333333%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-align: left;
+  padding-right: 99px;
+  box-sizing: border-box;
+}
+
+.history-year-inside {
+  font-size: 16px;
+  font-family: "NanumSquare", sans-serif;
+  line-height: 1.76;
+  width: 66.666666%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.history-contents::before {
+  content: " ";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #3e54d3;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.history-contents {
+  margin-bottom: 32px;
+  position: relative;
+  padding: 5px 50px 10px 99px;
+}
+
+.history-contents strong {
+  color: #3e54d3;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-bottom: 41px;
+  display: block;
+  font-size: 22px;
+}
+.certificate-title {
+  background-color: #e5f1fc;
+}
+
+.certificate-title h2 {
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 42px;
+  padding: 6px 5px;
+}
+
+.certificate-contenst {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.certificate-cover {
+  margin-bottom: 64px;
+}
+
+/* 맵 */
+.map-section {
+  display: flex;
+  justify-content: flex-start;
+}
+.map-tilte {
+  font-size: 32px;
+  color: black;
+  width: 27%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-align: right;
+  padding-right: 150px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.map-tilte::after {
+  content: " ";
+  width: 2px;
+  height: 291px;
+  background-color: #3e54d3;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 20%;
+}
+.map-section-summary {
+  width: 60%;
+}
+.map-section-summary li {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.map-section-summary li strong {
+  width: 40%;
+  font-weight: 600;
+}
+.use-description {
+  font-family: "NanumSquare";
+}
+
+@media (min-width: 1160px) {
+  .history-year h2 {
+    padding-right: 60px;
+  }
+
+  .history-year-contents {
+    padding: 5px 50px 10px 100px;
+  }
+}

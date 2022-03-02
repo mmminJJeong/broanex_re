@@ -26,7 +26,7 @@
 .header-inside {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 0 -20px;
 }
 
@@ -54,11 +54,31 @@
   align-items: center;
 }
 
+.drop-anchor h2 {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+}
+
+.drop-anchor:hover h2 {
+  color: #3e54d3;
+}
+
+#list-01:hover .list-01,
+#list-02:hover .list-02,
+#list-03:hover .list-03,
+#list-04:hover .list-04 {
+  width: auto;
+  display: block;
+  background-color: #ffffff;
+  padding-top: 30px;
+}
+
 .header-drop-0 {
   position: absolute;
   z-index: 20;
   display: none;
-  top: 70px;
+  top: 50px;
 }
 
 .header-drop-0:before {
@@ -76,12 +96,6 @@
   padding: 15px 0 17px 0;
 }
 
-.drop-anchor h2 {
-  font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
-}
-
 .header-drop-0-inside {
   display: flex;
   padding-top: 15px;
@@ -93,27 +107,27 @@
   font-family: "NanumSquare", sans-serif;
 }
 
+.drop-anchor-2 {
+  font-size: 16px;
+}
+
+.drop-anchor-2:hover {
+  color: #3e54d3;
+}
+
 .drop-anchor-1 {
   height: 20px;
   padding: 0 17px;
 }
 
-.drop-anchor {
-  position: relative;
-  display: flex;
-  white-space: nowrap;
-  padding: 20px 17px;
-  height: 40px;
-  align-items: center;
-}
-
 .drop.is_ko h3 {
   font-weight: bold;
   font-family: "NanumSquare", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 14px;
 }
 
-.header-drop-0-inside > .drop:hover .drop-anchor-1 {
+.drop-anchor:hover {
   color: #3e54d3;
 }
 
