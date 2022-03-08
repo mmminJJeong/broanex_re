@@ -214,15 +214,6 @@ export default function HeaderSection() {
                     <li className="drop-1 drop is_ko">
                       <Link
                         className="drop-anchor drop-anchor-2"
-                        to=""
-                        style={linkStyle}
-                      >
-                        <h3>사업개요</h3>
-                      </Link>
-                    </li>
-                    <li className="drop-1 drop is_ko">
-                      <Link
-                        className="drop-anchor drop-anchor-2"
                         to="/company"
                         style={linkStyle}
                       >
