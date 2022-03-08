@@ -84,10 +84,10 @@
 .gnb-group-02 {
   display: none;
   position: fixed;
-  top: 54px;
+  top: 68px;
   left: 0;
   width: 100%;
-  padding: 30px 0 0 0;
+  padding: 0;
   border-bottom: 1px solid #ebebeb;
   margin: 0;
   text-align: center;
@@ -134,6 +134,111 @@
   display: block;
   margin: 0 0 12px;
 }
+/* .header-logo-contents {
+  width: 116px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.header-menu {
+  margin: 0;
+}
+.header-menu-list {
+  width: auto;
+}
+.header-menu-list > ul {
+  display: flex;
+}
+
+.header-menu-list > ul > li {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.drop-anchor {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  padding: 20px 17px;
+  height: 40px;
+  align-items: center;
+}
+
+.drop-anchor h2 {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+}
+
+.drop-anchor:hover h2 {
+  color: #3e54d3;
+}
+
+#list-01:hover .list-01,
+#list-02:hover .list-02,
+#list-03:hover .list-03,
+#list-04:hover .list-04 {
+  width: auto;
+  display: block;
+  background-color: #ffffff;
+  padding-top: 30px;
+}
+
+.header-drop-0 {
+  position: absolute;
+  z-index: 20;
+  display: none;
+  top: 50px;
+}
+
+.header-drop-0:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 -50vw;
+}
+
+.header-drop-0-inside {
+  display: flex;
+  padding: 15px 0 17px 0;
+}
+
+.header-drop-0-inside {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
+.drop.is_ko .drop-anchor {
+  font-weight: bold;
+  font-family: "NanumSquare", sans-serif;
+}
+
+.drop-anchor-2 {
+  font-size: 16px;
+}
+
+.drop-anchor-2:hover {
+  color: #3e54d3;
+}
+
+.drop-anchor-1 {
+  height: 20px;
+  padding: 0 17px;
+}
+
+.drop.is_ko h3 {
+  font-weight: bold;
+  font-family: "NanumSquare", sans-serif;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.drop-anchor:hover {
+  color: #3e54d3;
+} */
 
 @media (min-width: 1160px) {
   .gnb {
