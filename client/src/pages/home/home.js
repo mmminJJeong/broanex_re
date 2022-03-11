@@ -255,7 +255,11 @@ export default function Home() {
               <h2>NEWS</h2>
               <p>브로넥스의 새로운 소식을 만나보세요.</p>
             </div>
-            <button className="view-btn news-btn">VIEW MORE</button>
+            <button className="view-btn news-btn">
+              <Link to="/cardnews" style={linkStyle}>
+                VIEW MORE
+              </Link>
+            </button>
           </div>
           <div className="news-item wrapper-1">
             <Link to="" style={linkStyle}>

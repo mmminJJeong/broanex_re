@@ -81,10 +81,16 @@
   transition: transform 0.1s ease;
 }
 
+.drop-anchor {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.drop-anchor-1 h3 {
+  font-weight: bold;
+}
 .gnb-group-02 {
   display: none;
   position: fixed;
-  top: 68px;
+  top: 60px;
   left: 0;
   width: 100%;
   padding: 0;
@@ -92,6 +98,7 @@
   margin: 0;
   text-align: center;
   background: #fff;
+  padding-top: 20px;
 }
 
 .gnb-group-01 > li:hover .gnb-group-02 {
@@ -125,6 +132,10 @@
   text-align: left;
   text-decoration: none;
   color: #202020;
+}
+
+.drop-anchor-2 {
+  font-size: 14px;
 }
 .drop-3 {
   margin-top: 16px;

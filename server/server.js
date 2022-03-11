@@ -1,10 +1,13 @@
-const express = require("express");
-const app = express();
-const PORT = process.env.PORT || 3030;
-app.get("/", (req, res) => {
-  res.send(`브로넥스 홈페이지`);
-});
+var express = require("express");
+var cors = require("cors");
+const router = require("./route");
 
-app.listen(PORT, () => {
-  console.log(`Server On : http://localhost:${PORT}/`);
-});
+var app = express();
+app.use(cors());
+
+app.use("/", router);
+
+var port = process.env.PORT || 8000;
+app.listen(port, () => console.log(`running on port ${port}`));
+
+module.exports = app;

@@ -26,7 +26,7 @@ const Notice = () => {
           <div className="wrapper-1">
             <ul className="notice-list">
               <li>
-                <Link to="/" style={linkStyle} className="notice-item">
+                <Link to="" style={linkStyle} className="notice-item">
                   <div className="notice-cover"></div>
                   <div className="notice-contents">
                     <h2>안녕하세요 예제입니다</h2>
@@ -44,7 +44,7 @@ const Notice = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" style={linkStyle} className="notice-item">
+                <Link to="" style={linkStyle} className="notice-item">
                   <div className="notice-cover"></div>
                   <div className="notice-contents">
                     <h2>안녕하세요 예제입니다</h2>
@@ -62,7 +62,7 @@ const Notice = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" style={linkStyle} className="notice-item">
+                <Link to="" style={linkStyle} className="notice-item">
                   <div className="notice-cover"></div>
                   <div className="notice-contents">
                     <h2>안녕하세요 예제입니다</h2>
