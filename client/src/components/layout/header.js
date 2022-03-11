@@ -160,7 +160,7 @@ export default function HeaderSection() {
                     <li className="drop-1 drop is_ko">
                       <Link
                         className="drop-anchor drop-anchor-2"
-                        to="/notice"
+                        to="/noticeList"
                         style={linkStyle}
                       >
                         <h3>공지사항</h3>
@@ -169,10 +169,10 @@ export default function HeaderSection() {
                     <li className="drop-1 drop is_ko">
                       <Link
                         className="drop-anchor drop-anchor-2"
-                        to="/cardnews"
+                        to="/NewsList"
                         style={linkStyle}
                       >
-                        <h3>News Card</h3>
+                        <h3>News</h3>
                       </Link>
                     </li>
                   </ul>

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./newsroom.css";
+import Axios from "axios";
 
 import HeaderSection from "../../components/layout/header";
 import FooterSection from "../../components/layout/footer";
@@ -10,6 +11,14 @@ export default function CardNews() {
     textDecoration: "none",
     color: "#000000",
   };
+
+  const [viewContent, setViewContent] = useState([]);
+  // 글 목록 불러오기
+  useEffect(() => {
+    Axios.get("http://localhost:8000/news/getNewsList").then(response => {
+      setViewContent(response.data);
+    });
+  }, []);
 
   return (
     <>
@@ -23,69 +32,19 @@ export default function CardNews() {
         </div>
 
         <section className="news-board">
-          <div className="wrapper-1">
-            <ul className="news-list">
-              <li className="news-item-02">
-                <Link to="" style={linkStyle}>
+          <div className="wrapper-1 news-list ">
+            {viewContent.map((Element, index) => (
+              <div className="news-item-02" key={index}>
+                <Link to="/news" style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
-                    <h2>안녕하세요 예제입니다</h2>
+                    <h2>{Element.title}</h2>
 
-                    <span className="date">2022-02-28</span>
+                    <span className="date">{Element.date}</span>
                   </div>
                 </Link>
-              </li>
-              <li className="news-item-02">
-                <Link to="" style={linkStyle}>
-                  <div className="news-cover"></div>
-                  <div className="news-contents">
-                    <h2>안녕하세요 예제입니다</h2>
-
-                    <span className="date">2022-02-28</span>
-                  </div>
-                </Link>
-              </li>
-              <li className="news-item-02">
-                <Link to="" style={linkStyle}>
-                  <div className="news-cover"></div>
-                  <div className="news-contents">
-                    <h2>안녕하세요 예제입니다</h2>
-
-                    <span className="date">2022-02-28</span>
-                  </div>
-                </Link>
-              </li>
-              <li className="news-item-02">
-                <Link to="" style={linkStyle}>
-                  <div className="news-cover"></div>
-                  <div className="news-contents">
-                    <h2>안녕하세요 예제입니다</h2>
-
-                    <span className="date">2022-02-28</span>
-                  </div>
-                </Link>
-              </li>
-              <li className="news-item-02">
-                <Link to="" style={linkStyle}>
-                  <div className="news-cover"></div>
-                  <div className="news-contents">
-                    <h2>안녕하세요 예제입니다</h2>
-
-                    <span className="date">2022-02-28</span>
-                  </div>
-                </Link>
-              </li>
-              <li className="news-item-02">
-                <Link to="" style={linkStyle}>
-                  <div className="news-cover"></div>
-                  <div className="news-contents">
-                    <h2>안녕하세요 예제입니다</h2>
-
-                    <span className="date">2022-02-28</span>
-                  </div>
-                </Link>
-              </li>
-            </ul>
+              </div>
+            ))}
           </div>
         </section>
         <FooterSection />
