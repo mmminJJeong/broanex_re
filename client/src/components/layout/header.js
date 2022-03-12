@@ -152,7 +152,11 @@ export default function HeaderSection() {
                 </Link>
               </li>
               <li>
-                <Link to="/notice" style={linkStyle} className="drop-anchor">
+                <Link
+                  to="/noticeList"
+                  style={linkStyle}
+                  className="drop-anchor"
+                >
                   <h2>NewsRoom</h2>
                 </Link>
                 <div className="gnb-group-02">
