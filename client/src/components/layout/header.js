@@ -14,7 +14,7 @@ export default function HeaderSection() {
         <div className="wrapper-2">
           <h1 className="header-logo">
             <Link to="/" style={linkStyle} className="link">
-              <img src="img/main-logo.png" alt=""></img>
+              <img src="/img/main-logo.png" alt=""></img>
             </Link>
           </h1>
 

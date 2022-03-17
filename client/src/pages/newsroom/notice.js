@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Axios from "axios";
 import "./newsroom.css";
-import parse from "html-react-parser";
 
 import HeaderSection from "../../components/layout/header";
 import FooterSection from "../../components/layout/footer";
@@ -16,9 +15,11 @@ const NoticeList = () => {
   };
 
   useEffect(() => {
-    Axios.get("http://localhost:8000/notice/getNoticeList").then(respones => {
-      setViewMoreContent(respones.data);
-    });
+    Axios.get("http://211.214.247.21:8000/notice/getNoticeList").then(
+      (respones) => {
+        setViewMoreContent(respones.data);
+      }
+    );
   }, []);
 
   return (
@@ -37,11 +38,17 @@ const NoticeList = () => {
             <div className="notice-list">
               {viewMoreContent.map((Element, index) => (
                 <div className="notice-inside" key={index}>
-                  <Link to="/notice" style={linkStyle} className="notice-item">
+                  <Link
+                    to={`/notice/${Element.board_id}`}
+                    style={linkStyle}
+                    className="notice-item"
+                  >
                     <div className="notice-cover"></div>
                     <div className="notice-contents">
                       <h2>{Element.title}</h2>
-                      <p>{parse(Element.content)}</p>
+                      <p
+                        dangerouslySetInnerHTML={{ __html: Element.content }}
+                      ></p>
                       <span className="date"></span>
                     </div>
                   </Link>

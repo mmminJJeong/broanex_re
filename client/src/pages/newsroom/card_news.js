@@ -13,11 +13,14 @@ export default function CardNews() {
   };
 
   const [viewContent, setViewContent] = useState([]);
+
   // 글 목록 불러오기
   useEffect(() => {
-    Axios.get("http://localhost:8000/news/getNewsList").then(response => {
-      setViewContent(response.data);
-    });
+    Axios.get("http://211.214.247.21:8000/news/getNewsList").then(
+      (response) => {
+        setViewContent(response.data);
+      }
+    );
   }, []);
 
   return (
@@ -25,7 +28,7 @@ export default function CardNews() {
       <div className="page-section">
         <HeaderSection />
         <div className="page-banner">
-          <img src="img/banner/banner-card.jpg" alt="페이지의 배너" />
+          <img src="/img/banner/banner-card.jpg" alt="페이지의 배너" />
           <div className="page-title wrapper-1">
             <h2>카드뉴스</h2>
           </div>
@@ -33,9 +36,10 @@ export default function CardNews() {
 
         <section className="news-board">
           <div className="wrapper-1 news-list ">
+            {/* 맵으로 받아오기 */}
             {viewContent.map((Element, index) => (
               <div className="news-item-02" key={index}>
-                <Link to="/news" style={linkStyle}>
+                <Link to={`/news/${Element.board_id}`} style={linkStyle}>
                   <div className="news-cover"></div>
                   <div className="news-contents">
                     <h2>{Element.title}</h2>

@@ -17,7 +17,6 @@ const db = mysql.createPool({
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
-//불러오는 주소
 router.get("/getNewsList", (req, res) => {
   const sqlQuery = "SELECT * FROM sample.news;";
   db.query(sqlQuery, (err, result) => {
@@ -25,13 +24,18 @@ router.get("/getNewsList", (req, res) => {
   });
 });
 
-//저장하는 주소
-router.post("/saveNews", (req, res) => {
-  const title = req.body.title;
-  const content = req.body.content;
-  const sqlQuery = "INSERT INTO sample.news (title, content) VALUES (?,?)";
-  db.query(sqlQuery, [title, content], (err, result) => {
-    res.send(err);
+//불러오는 주소
+router.get("/getNewsPost", (req, res) => {
+  // sql query 문
+  const sql = "SELECT * FROM sample.news WHERE board_id = ?";
+  // 전달받은 parameter 값
+  const params = req.query.board_id;
+  db.query(sql, params, (err, data) => {
+    if (!err) {
+      res.send(data);
+    } else {
+      res.send(err);
+    }
   });
 });
 

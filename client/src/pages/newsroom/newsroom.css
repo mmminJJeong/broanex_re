@@ -46,19 +46,23 @@
   font-weight: bold;
 }
 
+.notice-contents p img {
+  display: none;
+}
+
 .news-board {
   padding-top: 150px;
 }
 
 .news-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
 }
 .news-item-02 {
   width: 386px;
   text-align: center;
-  margin-bottom: 42px;
+  margin: 0 30px 50px 0;
 }
 
 .news-cover {
@@ -115,8 +119,33 @@
 .post-title {
   font-weight: 500;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #444343;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.post-title h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+}
+
+.contents-tit ul {
+  border: 1px solid #cfcfcf;
+}
+.contents-tit li {
+  display: inline-block;
+  padding: 0px 30px 0 0;
+  line-height: 50px;
+}
+
+.contents-tit li span {
+  padding-right: 20px;
+  display: inline-block;
+  background-color: #cccc;
+  text-align: center;
+  width: 200px;
+  margin-right: 30px;
+  height: 50px;
 }
 
 .notice-inside {
