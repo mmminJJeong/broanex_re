@@ -267,7 +267,7 @@
 .map-tilte::after {
   content: " ";
   width: 2px;
-  height: 291px;
+  height: 246px;
   background-color: #3e54d3;
   display: inline-block;
   position: absolute;
@@ -282,13 +282,19 @@
   display: flex;
   justify-content: space-between;
   font-family: "Noto Sans KR", sans-serif;
+  text-align: right;
 }
 .map-section-summary li strong {
   width: 40%;
   font-weight: 600;
+  text-align: left;
 }
 .use-description {
   font-family: "NanumSquare";
+}
+
+.maps {
+  margin-top: 60px;
 }
 
 @media (min-width: 1160px) {

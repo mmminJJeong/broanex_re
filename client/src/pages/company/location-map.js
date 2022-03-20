@@ -2,6 +2,8 @@ import React from "react";
 
 import HeaderSection from "../../components/layout/header";
 import FooterSection from "../../components/layout/footer";
+import Location from "../../components/Location";
+// import MapContainer from "../../components/kakaomap/Mapcontainer";
 
 export default function LocationMap() {
   return (
@@ -44,9 +46,12 @@ export default function LocationMap() {
               </li>
               <li>
                 <strong>E-MAIL</strong>
-                <div className="use-description">davidoh@broanexgroup.com</div>
+                <div className="use-description">broanex.sales@gmail.com</div>
               </li>
             </ul>
+          </div>
+          <div className="wrapper-1 maps">
+            <Location />
           </div>
         </section>
         <FooterSection />

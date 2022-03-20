@@ -63,14 +63,14 @@ export default function Home() {
             <img src="img/Home_banner_02.jpg" alt="" />
           </div>
           <div>
-            <img src="img/Home_banner_02.png" alt="" />
+            <img src="img/Home_banner_03.jpg" alt="" />
           </div>
         </Slider>
         {/* 브로넥스 온키퍼 배너 */}
         <Link to="/onkeeper" style={linkStyle}>
           {" "}
           <section className="show-intro">
-            <div className="wrapper-1">
+            <div className="wrapper-1 middle-banner">
               <img
                 className="showintro-logo"
                 src="img/onkeeper-logo.png"
@@ -80,17 +80,18 @@ export default function Home() {
                 <h2>대한민국 제조업 생태계를 뒤바꿀 비대면 서비스 플랫폼</h2>
                 <p>
                   기존에는 필요에 따라 각각 설치했던 시스템을 모듈형 플랫폼인
-                  ONKEEPER에서 한번에 관리할 수 있습니다. 스마트 팩토리
-                  통합관리, ONKEEPER 하나면 충분 합니다.
+                  ONKEEPER에서 한번에 관리할 수 있습니다. <br />
+                  스마트 팩토리 통합관리, <strong>ONKEEPER</strong> 하나면 충분
+                  합니다.
                 </p>
               </div>
               <button className="view-btn">VIEW MORE</button>
             </div>
             {/* 브로넥스 구성솔루션 */}
-            <div className="showintro-background">
+            {/* <div className="showintro-background">
               <img
                 className="showintro-cover-images"
-                src="img/showintrotab-2.png"
+                src="img/home-middle-background.jpg"
                 alt="태블릿 이미지"
               />
               <img
@@ -98,7 +99,7 @@ export default function Home() {
                 src="img/home-middle-background.png"
                 alt="backgroud text"
               />
-            </div>
+            </div> */}
           </section>
         </Link>
         <section className="smartfactory-solution">
@@ -261,7 +262,7 @@ export default function Home() {
               </Link>
             </button>
           </div>
-          <div className="news-item wrapper-1">
+          {/* <div className="news-item wrapper-1">
             <Link to="" style={linkStyle}>
               <div className="news-area">
                 <div className="new-item-cover">
@@ -286,7 +287,7 @@ export default function Home() {
                 <div>2022-03-01의 브로넥스를 만나보세요</div>
               </div>
             </Link>
-          </div>
+          </div> */}
         </section>
         <section className="bottom-banner">
           <img
