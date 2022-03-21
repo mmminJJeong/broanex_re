@@ -30,15 +30,73 @@ const CompanyTit = styled.div`
   padding: 0 10px;
   margin-top: 92px;
   p {
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
   }
 `;
 
 const HistoryTit = styled.div`
   width: auto;
-  background-color: #3f54d3;
+  padding: 10px;
+  text-align: center;
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-bottom: 20px;
+  }
+  p {
+    display: block;
+    font-family: "NanumSquare";
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+    background-color: #3f54d3;
+    padding: 10px 0;
+  }
 `;
 
+const HistoryYear = styled.div`
+  padding: 20px 12px;
+  position: relative;
+  text-align: center;
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 19px;
+  }
+  strong {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 24px;
+    display: block;
+    color: #3472d1;
+  }
+  .history-year-inside {
+    width: 100%;
+  }
+  ul {
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+  li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background-color: #3472d1;
+    border-radius: 45%;
+    margin-right: 14px;
+  }
+`;
+
+const Certificate = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+`;
 export default function Company() {
   return (
     <>
@@ -230,20 +288,19 @@ export default function Company() {
           </CompanyTit>
 
           <section className="page-section page-section-container">
-            <div className="page-history-title">
+            <HistoryTit>
               <h2>HISTORY</h2>
-              <div>
-                <p>
-                  "급변하는 경제 환경 속에서 고객과 함께 성장하며 도약하는
-                  글로벌 기업 브로넥스"
-                </p>
-              </div>
-            </div>
 
-            <section className="history-year">
+              <p>
+                "급변하는 경제 환경 속에서 고객과 함께 성장하며 도약하는 글로벌
+                기업 브로넥스"
+              </p>
+            </HistoryTit>
+
+            <HistoryYear>
               <h2>2021</h2>
               <div className="history-year-inside">
-                <div className="history-contents">
+                <div>
                   <strong>2021 인재 육성형 기업의로서의 성장</strong>
                   <ul>
                     <li>병역특례 기업 지정</li>
@@ -260,11 +317,11 @@ export default function Company() {
                   </ul>
                 </div>
               </div>
-            </section>
-            <section className="history-year">
+            </HistoryYear>
+            <HistoryYear>
               <h2>2019 ~ 2020</h2>
               <div className="history-year-inside">
-                <div className="history-contents">
+                <div>
                   <strong>2020 특허출원 및 B to C 솔루션 제품 출시</strong>
                   <ul>
                     <li>
@@ -280,7 +337,7 @@ export default function Company() {
                     <li>출결 및 학습몰입도 관련 온키퍼 솔루션 출시</li>
                   </ul>
                 </div>
-                <div className="history-contents">
+                <div>
                   <strong>2019 산단 R&D 및 데이터바우처 사업 수행</strong>
                   <ul>
                     <li>
@@ -293,11 +350,11 @@ export default function Company() {
                   </ul>
                 </div>
               </div>
-            </section>
-            <section className="history-year">
+            </HistoryYear>
+            <HistoryYear>
               <h2>2016 ~ 2018</h2>
               <div className="history-year-inside">
-                <div className="history-contents">
+                <div>
                   <strong>2018 MAGIC ERP WEB 출시</strong>
                   <ul>
                     <li>대중소상생형 스마트공장 공급기업 등록</li>
@@ -309,7 +366,7 @@ export default function Company() {
                   </ul>
                 </div>
 
-                <div className="history-contents">
+                <div>
                   <strong>2017 브로넥스 자본금 증자 | 5,000만원</strong>
                   <ul>
                     <li>MAGIC CRM WEB 솔루션 개발</li>
@@ -318,7 +375,7 @@ export default function Company() {
                   </ul>
                 </div>
 
-                <div className="history-contents">
+                <div>
                   <strong>2016 브로넥스 설립 (2016.04.26)</strong>
                   <ul>
                     <li>
@@ -331,14 +388,14 @@ export default function Company() {
                   </ul>
                 </div>
               </div>
-            </section>
+            </HistoryYear>
           </section>
 
           <section className="page-section page-section-container certificate">
             <div className="certificate-title">
               <h2>인증 현황</h2>
             </div>
-            <div className="certificate-contenst">
+            <Certificate>
               <div className="certificate-cover">
                 <img src="img/certificate/certificate-01.png" alt=""></img>
               </div>
@@ -363,7 +420,7 @@ export default function Company() {
               <div className="certificate-cover">
                 <img src="img/certificate/certificate-08.png" alt=""></img>
               </div>
-            </div>{" "}
+            </Certificate>
           </section>
           <FooterSection />
         </div>

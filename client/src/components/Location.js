@@ -1,6 +1,6 @@
 /*global kakao*/
 import React, { useEffect } from "react";
-
+import { BrowserView, MobileView } from "react-device-detect";
 const Location = () => {
   useEffect(() => {
     var container = document.getElementById("map");
@@ -27,16 +27,34 @@ const Location = () => {
   }, []);
 
   return (
-    <div>
-      <div
-        id="map"
-        style={{
-          width: "1200px",
-          height: "600px",
-          border: "1px solid #cfcfcf",
-        }}
-      ></div>
-    </div>
+    <>
+      <BrowserView>
+        {" "}
+        <div>
+          <div
+            id="map"
+            style={{
+              width: "1200px",
+              height: "600px",
+              border: "1px solid #cfcfcf",
+            }}
+          ></div>
+        </div>
+      </BrowserView>
+      <MobileView>
+        {" "}
+        <div>
+          <div
+            id="map"
+            style={{
+              width: "450px",
+              height: "400px",
+              border: "1px solid #cfcfcf",
+            }}
+          ></div>
+        </div>
+      </MobileView>
+    </>
   );
 };
 

@@ -17,7 +17,6 @@ const PageBanner = styled.div`
     max-width: 100%;
     height: 100%;
   }
-
   .page-title {
     position: absolute;
     top: 40%;
@@ -51,11 +50,9 @@ export default function CardNews() {
 
   // 글 목록 불러오기
   useEffect(() => {
-    Axios.get("http://211.214.247.21:8000/news/getNewsList").then(
-      (response) => {
-        setViewContent(response.data);
-      }
-    );
+    Axios.get("http://211.214.247.21:8000/news/getNewsList").then(response => {
+      setViewContent(response.data);
+    });
   }, []);
 
   return (
