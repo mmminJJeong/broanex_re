@@ -50,6 +50,13 @@
   display: none;
 }
 
+.newstit {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  padding-top: 100px;
+}
 .news-board {
   padding-top: 150px;
 }
