@@ -30,6 +30,18 @@ const PageBanner = styled.div`
   }
 `;
 
+// 제목 텍스트
+const Title01 = styled.div`
+  position: absolute;
+  top: 38%;
+  left: 18%;
+  h2 {
+    color: #000;
+    font-size: 54px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+  }
+`;
 const PageSection = styled.section`
   padding: 150px 8px;
 `;
@@ -41,10 +53,10 @@ export default function Consulting() {
         <div className="page-section">
           <HeaderSection />
           <div className="page-banner">
-            <img src="img/page-banner.jpg" alt="페이지의 배너" />
-            <div className="page-title wrapper-1">
+            <img src="img/banner/solution-banner.jpg" alt="페이지의 배너" />
+            <Title01 className="wrapper-1">
               <h2>상담문의</h2>
-            </div>
+            </Title01>
           </div>
 
           <section className="page-section page-section-container">

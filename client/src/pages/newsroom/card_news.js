@@ -50,9 +50,11 @@ export default function CardNews() {
 
   // 글 목록 불러오기
   useEffect(() => {
-    Axios.get("http://211.214.247.21:8000/news/getNewsList").then(response => {
-      setViewContent(response.data);
-    });
+    Axios.get("http://211.214.247.21:8000/news/getNewsList").then(
+      (response) => {
+        setViewContent(response.data);
+      }
+    );
   }, []);
 
   return (
@@ -70,20 +72,27 @@ export default function CardNews() {
             <p>브로넥스의 각종 소식을 받아보세요.</p>
           </div>
           <section className="news-board">
-            <div className="wrapper-1 news-list ">
-              {/* 맵으로 받아오기 */}
-              {viewContent.map((Element, index) => (
-                <div className="news-item-02" key={index}>
-                  <Link to={`/news/${Element.board_id}`} style={linkStyle}>
-                    <div className="news-cover"></div>
-                    <div className="news-contents">
-                      <h2>{Element.title}</h2>
-
-                      <span className="date">{Element.date}</span>
-                    </div>
-                  </Link>
+            <div className="wrapper-1">
+              <div className="notice-list">
+                <div className="list_grid list_tit">
+                  {/* <div> 글 번호 </div>
+                  <div> 제목 </div>
+                  <div>작성 날짜</div> */}
                 </div>
-              ))}
+                {/* 맵으로 받아오기 */}
+                {viewContent.map((Element, index) => (
+                  <div className="list_grid list_data" key={index}>
+                    <div>{Element.board_id}</div>
+                    <h2>
+                      <Link style={linkStyle} to={`/news/${Element.board_id}`}>
+                        {Element.title}
+                      </Link>
+                    </h2>
+
+                    <div>{Element.date}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
           <FooterSection />

@@ -99,7 +99,7 @@ export default function OnKeeper() {
         <div className="page-section">
           <HeaderSection />
           <div className="page-banner">
-            <img src="img/banner/banner-mes.jpg" alt="페이지의 배너" />
+            <img src="img/banner/banner-on.jpg" alt="페이지의 배너" />
             <div className="page-title wrapper-1">
               <h2>브로넥스만의 솔루션</h2>
             </div>
@@ -143,7 +143,7 @@ export default function OnKeeper() {
           </section>
 
           {/* 온키퍼 포인트 */}
-          <section className="onkeeper-point">
+          <section className="onkeeper-point wrapper-1">
             <div className="on-point-title">
               <h2>온키퍼만의 특징</h2>
             </div>

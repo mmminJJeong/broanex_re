@@ -75,6 +75,7 @@ const Core = styled.div`
     box-shadow: 5px 5px 10px #bebebe;
   }
 `;
+
 export default function Vision() {
   return (
     <>

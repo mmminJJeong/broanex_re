@@ -73,25 +73,29 @@ const NoticeList = () => {
             </div>
           </div>
           {/* 게시물 */}
+          <div className="wrapper-1 newstit">
+            <p>브로넥스에서 전하는 새로운 소식을 확인해보세요.</p>
+          </div>
           <section className="notice-board">
             <div className="wrapper-1">
               <div className="notice-list">
+                <div className="list_grid list_tit">
+                  {/* <div> 글 번호 </div>
+                  <div> 제목 </div>
+                  <div>작성 날짜</div> */}
+                </div>
                 {viewMoreContent.map((Element, index) => (
-                  <div className="notice-inside" key={index}>
-                    <Link
-                      to={`/notice/${Element.board_id}`}
-                      style={linkStyle}
-                      className="notice-item"
-                    >
-                      <div className="notice-cover"></div>
-                      <div className="notice-contents">
-                        <h2>{Element.title}</h2>
-                        <p
-                          dangerouslySetInnerHTML={{ __html: Element.content }}
-                        ></p>
-                        <span className="date"></span>
-                      </div>
-                    </Link>
+                  <div className="list_grid list_data" key={index}>
+                    <div>{Element.board_id}</div>
+                    <h2>
+                      <Link
+                        style={linkStyle}
+                        to={`/notice/${Element.board_id}`}
+                      >
+                        {Element.title}
+                      </Link>
+                    </h2>
+                    <div>{Element.date}</div>
                   </div>
                 ))}
               </div>

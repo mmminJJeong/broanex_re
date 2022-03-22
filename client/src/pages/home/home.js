@@ -2,9 +2,6 @@ import React from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import { BrowserView, MobileView } from "react-device-detect";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import HeaderSection from "../../components/layout/header";
 import FooterSection from "../../components/layout/footer";
 import styled from "styled-components";
@@ -142,42 +139,6 @@ export default function Home() {
     color: "#000000",
   };
 
-  //settings 부분, 슬라이더의 기능을 조정할 수 있다.
-  const settings = {
-    dots: false, // 점은 안 보이게
-    infinite: true, // 무한으로 즐기게
-    speed: 500,
-    slidesToShow: 1, //4장씩 보이게 해주세요
-    slidesToScroll: 1, //1장씩 넘어가세요
-    autoplay: true,
-    autoplaySpeed: 5000, // 넘어가는 속도
-    pauseOnHover: true,
-    centerMode: true,
-    centerPadding: "0px", // 0px 하면 슬라이드 끝쪽 이미지가 안잘림
-
-    responsive: [
-      // 반응형 웹 구현 옵션
-      {
-        breakpoint: 1200, // 화면 사이즈 1200px
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <>
       <BrowserView>
@@ -185,17 +146,9 @@ export default function Home() {
         <div className="page-section">
           <HeaderSection />
           {/* 배너 */}
-          <Slider {...settings} className="home-banner-sec">
-            <div>
-              <img src="img/Home_banner_01.jpg" alt="" />
-            </div>
-            <div>
-              <img src="img/Home_banner_02.jpg" alt="" />
-            </div>
-            <div>
-              <img src="img/Home_banner_03.jpg" alt="" />
-            </div>
-          </Slider>
+          <div className="home-banner-sec">
+            <img src="img/Main-baenner-f.jpg" alt="" />
+          </div>
           {/* 브로넥스 온키퍼 배너 */}
           <Link to="/onkeeper" style={linkStyle}>
             {" "}
@@ -433,18 +386,11 @@ export default function Home() {
         {" "}
         <div className="page-section">
           <HeaderSection />
+
           {/* 배너 */}
-          <Slider {...settings} className="home-banner-sec">
-            <div>
-              <img src="img/Home_banner_01.jpg" alt="" />
-            </div>
-            <div>
-              <img src="img/Home_banner_02.jpg" alt="" />
-            </div>
-            <div>
-              <img src="img/Home_banner_03.jpg" alt="" />
-            </div>
-          </Slider>
+          <div className="home-banner-sec">
+            <img src="img/Main-baenner-2.jpg" alt="" />
+          </div>
           {/* 브로넥스 온키퍼 배너 */}
 
           <ShowOnkeeper>
