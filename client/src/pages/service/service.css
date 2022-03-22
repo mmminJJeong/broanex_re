@@ -203,9 +203,13 @@
 }
 .point-content-item > div {
   border-radius: 50%;
-  background-color: #568cf7;
   width: 265px;
   height: 265px;
+  border: 1px dashed #2d3e9e;
+}
+.point-content-item > div > img {
+  width: 40%;
+  margin: 80px 0 0 0;
 }
 
 .point-content-text {

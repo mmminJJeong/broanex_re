@@ -174,31 +174,38 @@ export default function Monitoring() {
               <div className="service-point-cont">
                 <div className="point-content2">
                   <div className="point-content-item">
-                    <div></div>
+                    <div>
+                      <img src="/img/icon/maintenance.png" alt="" />
+                    </div>
                   </div>
                   <div className="point-content-text">
                     <h3>STEP. 1</h3>
                     <p>
-                      생산공정 및 설비 관련 데이터 수집, 저장, 알림,
-                      분석&모니터링을 통한 정보 통합 및 분석 / 관리
+                      생산공정 및 설비 관련 데이터 수집,<br></br> 저장, 알림,
+                      분석&모니터링을 통한 <br />
+                      정보 통합 및 분석 / 관리
                     </p>
                   </div>
                 </div>
                 <div className="point-content2">
                   <div className="point-content-item">
-                    <div></div>
+                    <div>
+                      <img src="/img/icon/preferences.png" alt="" />
+                    </div>
                   </div>
                   <div className="point-content-text">
                     <h3>STEP. 2</h3>
                     <p>
-                      대시보드를 통한 신뢰성 있는 정보 공유를 하여 개선 목표
-                      도출 및 내부 공감
+                      대시보드를 통한 신뢰성 있는
+                      <br /> 정보 공유를 하여 개선 목표 도출 및 내부 공감
                     </p>
                   </div>
                 </div>
                 <div className="point-content2">
                   <div className="point-content-item">
-                    <div></div>
+                    <div>
+                      <img src="./img/icon/settings (1).png" alt="" />
+                    </div>
                   </div>
                   <div className="point-content-text">
                     <h3>STEP. 3</h3>
@@ -233,17 +240,18 @@ export default function Monitoring() {
                 <h2>OO기기 A사</h2>
                 <ul className="use-section-summary">
                   <li>
-                    <i className="use-icon"></i>
+                    {/* <i className="use-icon"></i> */}
                     <strong>도입 제품</strong>
                     <div>Monitoring + MES</div>
                   </li>
                   <li>
-                    <i className="use-icon"></i>
+                    {/* <i className="use-icon"></i> */}
                     <strong>구축 이유</strong>
                     <div className="use-description is_en">
                       점점 높아지는 의료용 기기에 대한 품질 관리(UDI)에
-                      대비하고, 정확한 재고 관리를 통한 생산효율을 극대화할 수
-                      있는 스마트팩토리 시스템 구축
+                      대비하고,
+                      <br /> 정확한 재고 관리를 통한 생산효율을 극대화할 수 있는
+                      <br /> 스마트팩토리 시스템 구축
                     </div>
                   </li>
                 </ul>

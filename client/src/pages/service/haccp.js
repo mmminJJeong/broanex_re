@@ -242,8 +242,9 @@ export default function Haccp() {
                   <div className="point-content">
                     <h2>설비 데이터 수집</h2>
                     <p>
-                      온도, 습도 등의 데이터를 PLC 설비를 통해 자동 수집하여
-                      Human Error를 최소화합니다.
+                      온도, 습도 등의 데이터를 PLC 설비를 통해
+                      <br /> 자동 수집하여 Human Error를 <br />
+                      최소화합니다.
                     </p>
                   </div>
                 </div>
@@ -258,8 +259,9 @@ export default function Haccp() {
                   <div className="point-content">
                     <h2>실시간 모니터링 및 알람 제공</h2>
                     <p>
-                      설비 실시간 모니터링이 가능하며 이상 현상 발생 시 개인
-                      또는 현장에 알람을 제공합니다.
+                      설비 실시간 모니터링이 가능하며 이상
+                      <br /> 현상 발생 시 개인 또는
+                      <br /> 현장에 알람을 제공합니다.
                     </p>
                   </div>
                 </div>
@@ -274,8 +276,8 @@ export default function Haccp() {
                   <div className="point-content">
                     <h2>HACCP 통합 관리</h2>
                     <p>
-                      통합 관리표를 제공하여 HACCP 전체 프로세스의 추이를 한눈에
-                      확인할 수 있습니다.
+                      통합 관리표를 제공하여 HACCP 전체 프로세스의 <br />
+                      추이를 한눈에 확인할 수 있습니다.
                     </p>
                   </div>
                 </div>
@@ -290,8 +292,8 @@ export default function Haccp() {
                   <div className="point-content">
                     <h2>필수 요건 만족</h2>
                     <p>
-                      Smart HACCP 인증을 위한 필수적인 조건을 만족하는 시스템
-                      구축이 가능합니다.
+                      Smart HACCP 인증을 위한 필수적인 조건을
+                      <br /> 만족하는 시스템 구축이 가능합니다.
                     </p>
                   </div>
                 </div>
